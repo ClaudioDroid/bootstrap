@@ -1,5 +1,6 @@
 html, body, #home{
 	height: 100%;
+	overflow-x: hidden; /* Escondendo a barra de rolagem na horizontal */ 
 }
 
 body{
@@ -8,6 +9,27 @@ body{
 				linear-gradient(50deg,#ff4169,#7c26f8);  
 				background-attachment: fixed;
 	font-family: Helvetica, arial, "Sans-serief";
+}
+
+footer{
+	background: black;
+	/*height: 40%;*/
+	padding-top: 30px;
+	position: relative;
+}
+
+footer p{
+	font-size: 0.74em;
+}
+
+footer a{
+	font-size: 0.8em;
+	color: white;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: #9bf0e1;
 }
 
 /* 
@@ -59,11 +81,61 @@ nav.navbar-transparente{
 	color: black;
 }
 
+#servicos{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+#servicos h2, h3{
+	color: #7c25f8;
+}
+
+#recursos{
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	color: white;
+}
+
+#recursos h2{
+	color: white;
+}
+
+#recursos h3{
+	color: #9bf0e1;
+}
+
+
+
+.albuns{
+	padding:  10px 0; 
+}
+
+.rotate{
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	padding-left: 80px;
+}
+
 h1{
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 0.5em;
 	color: white;
+}
+
+h2{
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	/*color: #7c25f8;*/
+}
+
+h3{
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0..4em;
 }
 
 /* ********* Responsive breakpoints ********* */
@@ -104,3 +176,7 @@ h1{
 		font-size: 6em;
 	}
 }
+
+
+
+
